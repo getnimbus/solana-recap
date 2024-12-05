@@ -111,7 +111,8 @@
     queryKey: ["recap", userAddress],
     queryFn: () => getRecapData(userAddress),
     retry: false,
-    enabled: Boolean(!!userAddress),
+    // enabled: Boolean(!!userAddress),
+    enabled: false,
   });
 
   // $: {
